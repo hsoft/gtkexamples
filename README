@@ -1,0 +1,16 @@
+GtkTut - Easy to build Gtk tutorials
+====================================
+
+The Gtk documentation gives a lot of examples, but setting up a build
+environment for them is a bit tiresome. This project takes care of this.
+
+How to build
+------------
+
+`cd` into the subfolder corresponding to the project you want to build and
+then type the following::
+
+	../waf configure
+	../waf
+
+You'll then have an executable in the "build" subfolder.
