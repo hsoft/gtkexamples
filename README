@@ -1,7 +1,7 @@
 GtkExamples - Easy to build Gtk examples
 ========================================
 
-The Gtk documentation gives a lot of examples, but setting up a build
+The Gtk3 documentation gives a lot of examples, but setting up a build
 environment for them is a bit tiresome. This project takes care of this.
 Moreover, it also has its own, more complex examples. The first 5 examples are
 straight from GTK's documentation, but the rest is homebrewed.
