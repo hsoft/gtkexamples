@@ -1,0 +1,21 @@
+#! /usr/bin/env python
+
+top = '.'
+out = 'build'
+
+def options(opt):
+    opt.load ('compiler_c')
+
+def configure(conf):
+    conf.load ('compiler_c')
+
+    conf.check_cfg (package='gtk+-3.0', uselib_store='GTKLIB', args='--cflags --libs')
+
+
+def build(bld):
+    app = bld (
+        features = 'c cprogram',
+        uselib   = 'GTKLIB',
+        source   = 'main.c',
+        target   = 'completion'
+    )
