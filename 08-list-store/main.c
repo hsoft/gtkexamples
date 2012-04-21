@@ -32,12 +32,11 @@ create_book_list_store()
 {
     GtkListStore *store;
     GtkTreeIter iter;
-    int i;
     
     store = gtk_list_store_new(N_COLUMNS, G_TYPE_STRING, G_TYPE_STRING,
         G_TYPE_BOOLEAN);
 
-    Book *book = &BOOKS[0];
+    Book *book = BOOKS;
     while (book->title != NULL) {
         gtk_list_store_append(store, &iter);
         gtk_list_store_set(store, &iter,
